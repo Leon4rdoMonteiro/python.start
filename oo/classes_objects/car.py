@@ -4,9 +4,13 @@ class Car:
     x = 'Abcd'
 
     # Constructot method
-    def __init__(self):
+    def __init__(self, name, maker, year, color):
         # Object attributes
-        self.name = 'Gol'
-        self.maker = 'Wolks'
-        self.year = 2018
-        self.color = 'Silver'
+        self.name = name
+        self.maker = maker
+        self.year = year
+        self.color = color
+
+
+    def drive(self):
+        print(self. name + ' created')
