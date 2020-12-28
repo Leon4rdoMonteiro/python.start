@@ -1,9 +1,11 @@
 class Car:
 
-    # Class attributes
+    # Class attributes 
+    # No depends of class instance
     x = 'Abcd'
 
-    # Constructot method
+
+    # Constructor method
     def __init__(self, name, maker, year, color):
         # Object attributes
         self.name = name
@@ -12,5 +14,22 @@ class Car:
         self.color = color
 
 
+    # Instance method
     def drive(self):
         print(self. name + ' created')
+
+
+    # Static method
+    # Has no access to class attributes/methods 
+    # No depends of class instance
+    @staticmethod
+    def hello():
+        print('Hello World!')
+
+
+    # Class method
+    # Has no access to instance methods/attributes
+    # No depends of class instance
+    @classmethod
+    def get(cls):
+        print(cls.x)
