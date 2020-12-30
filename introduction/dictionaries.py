@@ -26,3 +26,15 @@ print('Cars:', cars)
 
 for key, value in cars.items():
     print(key + ' = ' + value)
+
+
+# Find in dictionary list
+users = [
+    { 'id': 1, 'name': 'Leonardo' },
+    { 'id': 2, 'name': 'Maria' },
+    { 'id': 3, 'name': 'Joao' }
+]
+
+user = list(filter(lambda user: user['id'] == 1, users))
+
+print('Found user:', user)
